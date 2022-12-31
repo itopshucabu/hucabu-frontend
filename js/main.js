@@ -44,11 +44,11 @@
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1000,
         items: 1,
         dots: false,
-        loop: true,
+        loop: false,
         nav : true,
         navText : [
             '<i class="bi bi-arrow-left"></i>',
