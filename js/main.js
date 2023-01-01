@@ -55,6 +55,28 @@
             '<i class="bi bi-arrow-right"></i>'
         ],
     });
+
+    $(".client-logo-carousel").owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+          0:{
+            items:1,
+            nav: false
+          },
+          600:{
+            items:2,
+            nav: false
+          },
+          1000:{
+            items:4,
+            nav: false
+          }
+        }
+      });
     
     $('.move-to-about').click(function () {
         $('html, body').animate({
