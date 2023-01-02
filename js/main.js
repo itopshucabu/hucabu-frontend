@@ -57,7 +57,7 @@
     });
 
     $(".client-logo-carousel").owlCarousel({
-        margin: 20,
+        margin: 50,
         loop: true,
         autoplay: true,
         autoplayTimeout: 2000,
@@ -72,7 +72,7 @@
             nav: false
           },
           1000:{
-            items:4,
+            items:5,
             nav: false
           }
         }

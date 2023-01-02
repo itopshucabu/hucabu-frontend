@@ -253,8 +253,9 @@ h6,
     transform: scale(1.1);
 }
 
-.image-box-size-class {
-    height: 180px;
+.image-box-size-class { 
+    max-width: 90%;
+    height: 110px;
 }
 
 .link-color {
