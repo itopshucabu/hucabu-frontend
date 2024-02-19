@@ -743,6 +743,10 @@
     </div>
     <!-- Footer End -->
 
+    <div id="loader">
+        <div class="loader-circle"></div>
+    </div>
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
@@ -765,11 +769,45 @@
 
         form.addEventListener('submit', e => {
             e.preventDefault()
+            loader.style.display = 'block';
             fetch(scriptUrl, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-                .catch(error => console.error('Error!', error.message))
+                .then(response => {
+                loader.style.display = 'none';
+                alert("Thanks for Contacting us..! We Will reach out to You Soon...");
+                form.reset();
+            })
+                .catch(error => {
+                // Hide loader on error
+                loader.style.display = 'none';
+                console.error('Error!', error.message);
+            })
         })
     </script>
     </body>
 
 </html>
+
+<style>
+#loader {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+
+    .loader-circle {
+        border: 8px solid #f3f3f3; /* Light gray border */
+        border-top: 8px solid #045a93; /* Blue border */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite; /* Rotate animation */
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
