@@ -32,6 +32,16 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MN43RS4N3D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MN43RS4N3D');
+    </script>
 </head>
 
 <div>
@@ -209,44 +219,48 @@
         <div class="row g-5">
             <div class="col-lg-6 col-md-6">
                 <a href="sales-capability.html" class="link-color">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa-solid fa fa-file-invoice-dollar fa-2x"></i>
+                    <div class="service-item bg-secondary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
+                            style="width: 90px; height: 90px;">
+                            <i class="fa-solid fa fa-file-invoice-dollar fa-2x"></i>
+                        </div>
+                        <h3 class="mb-3">Sales Capability</h3>
+                        <p class="mb-0">End to End solutions on People, Processes and Tools for Sales. </br> Designing
+                            and
+                            execution of combined skills, strategies, Knowledge and resources that a sales organization
+                            requires</p>
                     </div>
-                    <h3 class="mb-3">Sales Capability</h3>
-                    <p class="mb-0">End to End solutions on People, Processes and Tools for Sales. </br> Designing and
-                        execution of combined skills, strategies, Knowledge and resources that a sales organization
-                        requires</p>
-                </div>
                 </a>
             </div>
             <div class="col-lg-6 col-md-6">
                 <a href="nurse-skill-development.html" class="link-color">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-user-nurse fa-2x"></i>
+                    <div class="service-item bg-secondary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
+                            style="width: 90px; height: 90px;">
+                            <i class="fa fa-user-nurse fa-2x"></i>
+                        </div>
+                        <h3 class="mb-3">Nurses Soft Skill development</h3>
+                        <p class="mb-0">Developing soft skills in nursing by fostering emotional and social intelligence
+                            to
+                            provide quality healthcare to the patients </br> Equipping them to practice patient-scentric
+                            behaviour</p>
                     </div>
-                    <h3 class="mb-3">Nurses Soft Skill development</h3>
-                    <p class="mb-0">Developing soft skills in nursing by fostering emotional and social intelligence to
-                        provide quality healthcare to the patients </br> Equipping them to practice patient-scentric
-                        behaviour</p>
-                </div>
                 </a>
             </div>
             <div class="col-lg-6 col-md-6">
                 <a href="business-interventions.html" class="link-color">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-line fa-2x"></i>
+                    <div class="service-item bg-secondary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
+                            style="width: 90px; height: 90px;">
+                            <i class="fa fa-chart-line fa-2x"></i>
+                        </div>
+                        <h3 class="mb-3">Business Interventions</h3>
+                        <p class="mb-0">Enabling organizations improve productivity and performance through individuals
+                            and
+                            as team </br> Crafting strategies involving different approaches a business can use to
+                            effect
+                            change within its organizational structure or processes</p>
                     </div>
-                    <h3 class="mb-3">Business Interventions</h3>
-                    <p class="mb-0">Enabling organizations improve productivity and performance through individuals and
-                        as team </br> Crafting strategies involving different approaches a business can use to effect
-                        change within its organizational structure or processes</p>
-                </div>
                 </a>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -772,15 +786,15 @@
             loader.style.display = 'block';
             fetch(scriptUrl, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                loader.style.display = 'none';
-                alert("Thanks for Contacting us..! We Will reach out to You Soon...");
-                form.reset();
-            })
+                    loader.style.display = 'none';
+                    alert("Thanks for Contacting us..! We Will reach out to You Soon...");
+                    form.reset();
+                })
                 .catch(error => {
-                // Hide loader on error
-                loader.style.display = 'none';
-                console.error('Error!', error.message);
-            })
+                    // Hide loader on error
+                    loader.style.display = 'none';
+                    console.error('Error!', error.message);
+                })
         })
     </script>
     </body>
@@ -788,7 +802,7 @@
 </html>
 
 <style>
-#loader {
+    #loader {
         display: none;
         position: fixed;
         top: 50%;
@@ -798,16 +812,24 @@
     }
 
     .loader-circle {
-        border: 8px solid #f3f3f3; /* Light gray border */
-        border-top: 8px solid #045a93; /* Blue border */
+        border: 8px solid #f3f3f3;
+        /* Light gray border */
+        border-top: 8px solid #045a93;
+        /* Blue border */
         border-radius: 50%;
         width: 50px;
         height: 50px;
-        animation: spin 1s linear infinite; /* Rotate animation */
+        animation: spin 1s linear infinite;
+        /* Rotate animation */
     }
 
     @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
     }
 </style>
