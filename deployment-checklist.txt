@@ -9,3 +9,7 @@ PROD - https://script.google.com/macros/s/AKfycbzow7Q_CdoadrvnrYzrmUmzMo6orHMj2t
 3. Modify CNAME filed
 STAGE - stage.hucabusolutions.com
 PROD - www.hucabusolutions.com
+
+4. Modify sitemap
+STAGE - replace to stage
+PROD - replace to www
