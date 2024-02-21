@@ -1,0 +1,11 @@
+1. Modify Google Analytics TAG Measurement ID [index.html, LINE-37 & 43]
+STAGE - G-MN43RS4N3D
+PROD - G-YQSNSX6ZV4
+
+2. Modify Contact us form applications [index.html, LINE-781]
+STAGE - https://script.google.com/macros/s/AKfycbzhkeZrqxg5SLipRipT5b7jBV5gKvAF96CVT3mT36j1BBGdxTT9DSTOnAY3tyDO3JPzLg/exec
+PROD - https://script.google.com/macros/s/AKfycbzow7Q_CdoadrvnrYzrmUmzMo6orHMj2tER98QWhB521Z-m21ck53uhKFMJ4fgnEFTLeQ/exec
+
+3. Modify CNAME filed
+STAGE - stage.hucabusolutions.com
+PROD - www.hucabusolutions.com
