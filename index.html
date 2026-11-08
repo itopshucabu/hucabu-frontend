@@ -51,8 +51,8 @@
         var open = false;
         var loaded = false;
         function hucabuToggle() {
-
-            var BOT_URL = 'https://script.google.com/macros/s/AKfycbwzIYNjGhZJDEqxSaoiPWFS7SaPcbsZHps5uG7Y6tNpbz0XCdzIq6a-THa1lzNxysxq/exec';
+            // BELOW IS PROD URL
+            // var BOT_URL = 'https://script.google.com/macros/s/AKfycbwzIYNjGhZJDEqxSaoiPWFS7SaPcbsZHps5uG7Y6tNpbz0XCdzIq6a-THa1lzNxysxq/exec';
             var panel = document.getElementById('hucabu-panel');
             var frame = document.getElementById('hucabu-frame');
             var btn = document.getElementById('hucabu-btn');
@@ -74,8 +74,9 @@
 <!-- floating chat button + iframe STARTS here -->
 <div id="hucabu-chat-widget">
 
-    <!-- bubble button -->
-    <button id="hucabu-btn" onclick="hucabuToggle()" aria-label="Chat with HuCaBu" style="
+  <!-- bubble button -->
+  <button id="hucabu-btn" onclick="hucabuToggle()" aria-label="Chat with HuCaBu"
+    style="
       position:fixed; bottom:24px; right:24px; z-index:99999;
       width:60px; height:60px; border-radius:50%;
       background:#9B1C22; color:#fff; border:none; cursor:pointer;
@@ -83,11 +84,11 @@
       font-size:28px; display:flex; align-items:center; justify-content:center;
       transition: transform .2s;
     ">
-        💬
-    </button>
+    💬
+  </button>
 
-    <!-- chat panel (hidden by default) -->
-    <div id="hucabu-panel" style="
+  <!-- chat panel (hidden by default) -->
+  <div id="hucabu-panel" style="
     display:none;
     position:fixed; bottom:96px; right:24px; z-index:99999;
     width:380px; max-width:calc(100vw - 32px);
@@ -96,17 +97,17 @@
     box-shadow:0 8px 30px rgba(0,0,0,.2);
     background:#fff;
   ">
-        <!-- close button -->
-        <button onclick="hucabuToggle()" style="
+    <!-- close button -->
+    <button onclick="hucabuToggle()" style="
       position:absolute; top:10px; right:12px; z-index:2;
       background:rgba(255,255,255,.3); color:#fff; border:none;
       width:28px; height:28px; border-radius:50%; cursor:pointer;
       font-size:16px; display:flex; align-items:center; justify-content:center;
     ">✕</button>
 
-        <iframe id="hucabu-frame" style="width:100%; height:100%; border:none;"
-            allow="clipboard-read; clipboard-write"></iframe>
-    </div>
+    <iframe id="hucabu-frame" style="width:100%; height:100%; border:none;"
+      allow="clipboard-read; clipboard-write"></iframe>
+  </div>
 </div>
 <!-- floating chat button + iframe ENDS here -->
 
