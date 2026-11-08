@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <title>HuCaBu Solutions | India</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Hucabu Solutions, Sales Capability, nurse skill development, business interventions, behavioural interventions, leadership interventions" name="keywords">
+    <meta
+        content="Hucabu Solutions, Sales Capability, nurse skill development, business interventions, behavioural interventions, leadership interventions"
+        name="keywords">
     <meta content="HuCaBu Solutions" name="description">
 
     <!-- Favicon -->
@@ -46,6 +48,46 @@
         gtag('config', 'G-YQSNSX6ZV4');
     </script>
 </head>
+
+<!-- floating chat button + iframe STARTS here -->
+<div id="hucabu-chat-widget">
+
+  <!-- bubble button -->
+  <button id="hucabu-btn" onclick="hucabuToggle()" aria-label="Chat with HuCaBu"
+    style="
+      position:fixed; bottom:24px; right:24px; z-index:99999;
+      width:60px; height:60px; border-radius:50%;
+      background:#9B1C22; color:#fff; border:none; cursor:pointer;
+      box-shadow:0 4px 12px rgba(0,0,0,.25);
+      font-size:28px; display:flex; align-items:center; justify-content:center;
+      transition: transform .2s;
+    ">
+    💬
+  </button>
+
+  <!-- chat panel (hidden by default) -->
+  <div id="hucabu-panel" style="
+    display:none;
+    position:fixed; bottom:96px; right:24px; z-index:99999;
+    width:380px; max-width:calc(100vw - 32px);
+    height:580px; max-height:calc(100vh - 120px);
+    border-radius:16px; overflow:hidden;
+    box-shadow:0 8px 30px rgba(0,0,0,.2);
+    background:#fff;
+  ">
+    <!-- close button -->
+    <button onclick="hucabuToggle()" style="
+      position:absolute; top:10px; right:12px; z-index:2;
+      background:rgba(255,255,255,.3); color:#fff; border:none;
+      width:28px; height:28px; border-radius:50%; cursor:pointer;
+      font-size:16px; display:flex; align-items:center; justify-content:center;
+    ">✕</button>
+
+    <iframe id="hucabu-frame" style="width:100%; height:100%; border:none;"
+      allow="clipboard-read; clipboard-write"></iframe>
+  </div>
+</div>
+<!-- floating chat button + iframe ENDS here -->
 
 <div>
     <!-- Topbar Start -->
@@ -766,8 +808,8 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a> -->
 
 
     <!-- JavaScript Libraries -->
