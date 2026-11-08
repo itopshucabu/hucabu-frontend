@@ -46,6 +46,26 @@
         gtag('js', new Date());
 
         gtag('config', 'G-YQSNSX6ZV4');
+
+         //   PASTE YOUR DEPLOYED WEB APP URL HERE
+        var open = false;
+        var loaded = false;
+        function hucabuToggle() {
+            // BELOW IS PROD URL
+            var BOT_URL = 'https://script.google.com/macros/s/AKfycbwzIYNjGhZJDEqxSaoiPWFS7SaPcbsZHps5uG7Y6tNpbz0XCdzIq6a-THa1lzNxysxq/exec';
+            var panel = document.getElementById('hucabu-panel');
+            var frame = document.getElementById('hucabu-frame');
+            var btn = document.getElementById('hucabu-btn');
+
+            open = !open;
+            panel.style.display = open ? 'block' : 'none';
+            btn.textContent = open ? '✕' : '💬';
+            btn.style.transform = open ? 'rotate(90deg)' : '';
+            if (open && !loaded) {
+                frame.src = BOT_URL;
+                loaded = true;
+            }
+        };
     </script>
 </head>
 
